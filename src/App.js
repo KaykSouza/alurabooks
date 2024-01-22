@@ -1,4 +1,5 @@
 import Header from './componentes/Header';
+import Pesquisa from './componentes/Pesquisa';
 import styled from 'styled-components';
 
 
@@ -8,15 +9,13 @@ const AppContainer = styled.div`
     background: rgb(2,0,36);
     background: linear-gradient(90deg, #002F52 35%, #326589 165%);
 
-  li {
-    list-style: none;
-  }
 `
 
 function App() {
   return (
     <AppContainer>
-      <Header></Header>
+      <Header />
+      <Pesquisa />
     </AppContainer>
   );
 }
